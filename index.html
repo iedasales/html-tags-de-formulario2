@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulàrio 2</title> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <DIV>
+                <LABel for="nome">Nome</LABel>
+                <input id="nome"type="text">
+            </DIV>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email">
+            </div>
+            <div>
+                <label for="]telefone">Telefone</label>
+                <input id="telefone" type="text">
+            </div>
+            <div>
+                <label for="bairro">Bairro</label>
+                <input id="bairro" type="text">
+            </div>
+            <label for="cidade">Cidade</label>
+            <input id="cidade" type="text" list="cidades">
+            <datalist id="cidades" >
+                <option >Fortaleza</option>
+                <option >Fortin</option>
+                <option >Caucaia</option>
+                <option >Aquiraz</option>
+                <option >Eusebio</option>
+                <option >maracanaú</option>
+                <option >Maranguape</option>
+            </datalist>
+            <div>
+                <label for="estado"Estado></label>
+                <select id="estado"></select>
+                <option disabled select>Escolha seu estado</option>
+                <option >Acre</option>
+                <option >Bahia</option>
+                <option >Ceará</option>
+                <option >Distrito Federal</option>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados cadastrais</legend>
+            <label for="endereço">endereço</label>
+            <input id="endereço" type=" text" placeholder="Av/Rua">
+        </fieldset>
+        <fieldset>
+            <legend>Dados do curso</legend>
+            <div>
+                <label >Cursos</label>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            Fulstack
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            Marketing
+                        </label>
+                    </li> <li>
+                        <label>
+                            <input type="checkbox">
+                            Ui/Ux
+                        </label>
+                    </li> <li>
+                        <label>
+                            <input type="checkbox">
+                            Data Analytics
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <label >Turno</label>
+                <ul>
+                    <li>
+                        <label >
+                            <input name="turno" type="radio">
+                            Manhã
+                        </label>
+                    </li>
+                    <li>
+                        <label >
+                            <input name="turno" type="radio">
+                            TARDE
+                        </label>
+                    </li>
+                    <li>
+                        <label >
+                            <input name="turno" type="radio">
+                            NOITE
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+     </form>
+</body>
+</html>
